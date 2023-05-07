@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namesspace FriendLetter
+namespace FriendLetter
 {
   class Program
   {
@@ -9,7 +9,7 @@ namesspace FriendLetter
     {
       WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
       builder.Services.AddControllersWithViews();
-      webApplication app = builder.Build();
+      WebApplication app = builder.Build();
       app.UseRouting();
       app.MapControllerRoute(
         name: "default",
